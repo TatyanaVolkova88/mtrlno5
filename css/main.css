@@ -1,0 +1,200 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+.header {
+padding-top: 46px;
+background-color: #efe6dd; 
+padding-bottom: 30px;
+}
+
+.header-nav{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+    margin-bottom: 50px;
+}
+
+
+.logo{
+    position: relative;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    line-height: 1;
+}
+
+
+
+/* nav */
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+
+
+}
+
+.nav-button{
+    display: none; 
+}
+
+.nav-link{
+    color: #000;
+
+}
+
+.nav-link.active{
+    color: #606060;
+}
+
+/* header-content */
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+}
+
+.header-content{
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+
+.header-content p {
+ line-height: 2;
+}
+
+
+
+/* Portfolio */
+.portfolio{
+ padding: 50px 0;
+ background-color: #f1f1f1;
+}
+
+
+
+.title-1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.project{
+    text-align: center;
+
+}
+
+.project + .project {
+    margin-top: 90px;
+}
+
+.project-img{
+    margin-bottom: 40px;
+
+}
+
+.project-title{
+    font-size: 18px;
+
+}
+
+.project-title a {
+    color: #000;
+    text-decoration: underline;
+    
+}
+
+
+
+.footer {
+    position: fixed;  bottom: 0;  left: 0; width: 100%;  
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #828282;
+}
+
+/* popup-container style */
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+
+
+}
+
+.popup-container .preview {
+    max-width: 50rem;
+    height: 40rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.8);
+    overflow: auto;
+    position: relative;
+    display: none;
+    margin-top: 50px;
+    
+
+}
+
+.popup-container .preview.active {
+    display: inline-block;
+
+}
+
+.popup-img-icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.popup-container .preview p {
+    padding: 0.5rem;
+    
+
+}
+
+.popup-container .preview .popup-img {
+    padding: 0.5rem;
+
+    
+}
+
+.popup-container .preview .fa-times {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
